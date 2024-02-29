@@ -1,0 +1,27 @@
+body {
+    background-color: rgba(63, 63, 172, 0.637);
+}
+
+
+.weather-box {
+    background-color: rgba(0, 0, 0, 0.63);
+    height: 500px;
+    width: 50%;
+    margin-top: 10%;
+    margin-left: 25%;
+    color: rgb(255, 255, 255);
+}
+
+.todays-weather {
+    font-size: xx-large;
+    margin-top: 0px;
+    margin-left: 20px;
+}
+
+.displayWeather{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Raleway', sans-serif;
+}

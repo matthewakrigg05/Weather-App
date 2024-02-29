@@ -1,0 +1,11 @@
+1. Build a weather app that has background images that correspond to weather conditions
+2. Search for places with different weather
+3. Browse the day and the weeks forecast
+
+
+
+
+IN HTML WE NEED:
+- space for search bar 
+- background images 
+- the area in the screen displaying the weather informations
