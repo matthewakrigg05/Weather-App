@@ -25,3 +25,14 @@ body {
     align-items: center;
     font-family: 'Raleway', sans-serif;
 }
+
+button.button{
+    width: 30px;
+    height: 24px;
+    background: #7c7c7c2b;
+    color: white;
+}
+
+button.button:hover{
+    border: 1px solid white;
+}
