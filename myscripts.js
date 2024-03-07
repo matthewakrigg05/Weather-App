@@ -1,5 +1,5 @@
-let button = document.querySelector('.button')
-let inputvalue = document.querySelector('.inputValue')
+let button = document.querySelector('#button')
+let inputvalue = document.querySelector('#searchBox')
 let nameVal = document.querySelector('.name');
 let temp = document.querySelector('.temp');
 let desc = document.querySelector('.desc');

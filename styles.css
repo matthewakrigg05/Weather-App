@@ -5,17 +5,40 @@ body {
 
 .weather-box {
     background-color: rgba(0, 0, 0, 0.63);
-    height: 500px;
+    height: 50%;
     width: 50%;
-    margin-top: 10%;
-    margin-left: 25%;
-    color: rgb(255, 255, 255);
+    position: absolute;
+    top: 25%;
+    left: 25%;
+    border-radius: 50px;
+    color: white;
 }
 
 .todays-weather {
+    display: flex;
     font-size: xx-large;
     margin-top: 0px;
     margin-left: 20px;
+}
+
+.input {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#searchBox {
+    width: 50%;
+    height: 24px;
+    border-radius: 80px;
+}
+
+#button{
+    width: 30px;
+    height: 24px;
+    border-radius: 20px;
+    background: #7c7c7c2b;
+    color: white;
 }
 
 .displayWeather{
@@ -26,12 +49,7 @@ body {
     font-family: 'Raleway', sans-serif;
 }
 
-button.button{
-    width: 30px;
-    height: 24px;
-    background: #7c7c7c2b;
-    color: white;
-}
+
 
 button.button:hover{
     border: 1px solid white;
