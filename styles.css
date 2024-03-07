@@ -1,15 +1,18 @@
 body {
-    background-color: rgba(63, 63, 172, 0.637);
+    background-image: url("weather-images/emma-claire-oVXNW-9INfc-unsplash.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
 }
-
 
 .weather-box {
     background-color: rgba(0, 0, 0, 0.63);
-    height: 50%;
-    width: 50%;
+    height: 40%;
+    width: 40%;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
     position: absolute;
-    top: 25%;
-    left: 25%;
     border-radius: 50px;
     color: white;
 }
