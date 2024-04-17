@@ -2,7 +2,9 @@ let button = document.querySelector('#button')
 let inputvalue = document.querySelector('#searchBox')
 let nameVal = document.querySelector('.name');
 let temp = document.querySelector('.temp');
+let feelsLike = document.querySelector('.feels-like');
 let desc = document.querySelector('.desc');
+let suns = document.querySelector('.sun');
 
 var enterKey = document.getElementById("searchBox")
 
@@ -24,6 +26,7 @@ enterKey.addEventListener("keypress", function(event) {
 
 
 const displayData=(weather)=>{
-    temp.innerText=`${weather.main.temp}C`
-    desc.innerText=`${weather.weather[0].main}`
+    temp.innerText=`${weather.main.temp}°C`
+    feelsLike.innerText = `Feels like ${weather.main.feels_like}°C`
+    desc.innerText=`${weather.weather[0].description}`
 }
