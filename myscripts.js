@@ -29,7 +29,8 @@ enterKey.addEventListener("keypress", function(event) {
 const displayData=(weather)=>{
     temp.innerText=`${weather.main.temp}°C`
     feelsLike.innerText = `Feels like ${weather.main.feels_like}°C`
-    max.innerText = `Max temperature: ${weather.main.temp_max}°C`
-    min.innerText = `Min temperature: ${weather.main.temp_min}°C`
+    max.innerText = `Maximum temperature: ${weather.main.temp_max}°C`
+    min.innerText = `Minimum temperature: ${weather.main.temp_min}°C`
+
     desc.innerText=`${weather.weather[0].description}`
 }
