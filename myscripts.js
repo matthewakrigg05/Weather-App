@@ -31,5 +31,6 @@ const displayData=(weather)=>{
     feelsLike.innerText = `Feels like ${weather.main.feels_like}°C`
     max.innerText = `Maximum temperature: ${weather.main.temp_max}°C`
     min.innerText = `Minimum temperature: ${weather.main.temp_min}°C`
+
     desc.innerText=`${weather.weather[0].description}`
 }
