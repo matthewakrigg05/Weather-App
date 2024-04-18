@@ -6,8 +6,10 @@ let feelsLike = document.querySelector('.feels-like');
 let desc = document.querySelector('.desc');
 let max = document.querySelector('.max');
 let min = document.querySelector('.min');
+let locationIcon = document.querySelector('.weather-icon')
 
 var enterKey = document.getElementById("searchBox")
+
 
 button.addEventListener('click', function(){
     fetch(`https://api.openweathermap.org/data/2.5/weather?q=${inputvalue.value}&units=metric&appid=8dee5f5a933b8f9547bfb2b995ef2d91`)
@@ -15,6 +17,7 @@ button.addEventListener('click', function(){
     .then(
         displayData)
     .catch(err => alert("Invalid City Name"))
+    
 })
 
 enterKey.addEventListener("keypress", function(event) {
@@ -31,6 +34,9 @@ const displayData=(weather)=>{
     feelsLike.innerText = `Feels like ${Math.round(weather.main.feels_like)}°C`
     max.innerText = `Maximum temperature: ${Math.round(weather.main.temp_max)}°C`
     min.innerText = `Minimum temperature: ${Math.round(weather.main.temp_min)}°C`
-
+ 
     desc.innerText=`${weather.weather[0].description}`
+    const icon = weather.weather[0].icon;
+    locationIcon.innerHTML = `<img src="C:/CODING/Weather-App/icons/${icon}.png"></img>`;
 }
+
