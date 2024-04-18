@@ -34,7 +34,7 @@ const displayData=(weather)=>{
     feelsLike.innerText = `Feels like ${Math.round(weather.main.feels_like)}°C`
     max.innerText = `Maximum temperature: ${Math.round(weather.main.temp_max)}°C`
     min.innerText = `Minimum temperature: ${Math.round(weather.main.temp_min)}°C`
- 
+
     desc.innerText=`${weather.weather[0].description}`
     const icon = weather.weather[0].icon;
     locationIcon.innerHTML = `<img src="C:/CODING/Weather-App/icons/${icon}.png"></img>`;
