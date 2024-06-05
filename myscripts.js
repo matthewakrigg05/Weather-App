@@ -16,7 +16,6 @@ button.addEventListener('click', function(){
     .then(
         displayData)
     .catch(err => alert("Invalid City Name"))
-    
 })
 
 enterKey.addEventListener("keypress", function(event) {
