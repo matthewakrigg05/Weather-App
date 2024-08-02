@@ -9,6 +9,7 @@ let min = document.querySelector('.min');
 let locationIcon = document.querySelector('.weather-icon')
 
 
+
 var enterKey = document.getElementById("searchBox")
 
 button.addEventListener('click', function(){
@@ -38,6 +39,6 @@ const displayData=(weather)=>{
     var icon = weather.weather[0].icon;
     locationIcon.innerHTML = `<img src="icons/${icon}.png" alt=${icon}>`;
     document.body.setAttribute("style", "background-image: url('weather-images/" + icon + ".jpg'); transition: linear 1.5s")
-    
+
 }
 
