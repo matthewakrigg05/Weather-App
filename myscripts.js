@@ -8,6 +8,7 @@ let max = document.querySelector('.max');
 let min = document.querySelector('.min');
 let locationIcon = document.querySelector('.weather-icon')
 
+
 var enterKey = document.getElementById("searchBox")
 
 button.addEventListener('click', function(){
@@ -36,5 +37,6 @@ const displayData=(weather)=>{
 
     var icon = weather.weather[0].icon;
     locationIcon.innerHTML = `<img src="icons/${icon}.png" alt=${icon}>`;
+    document.body.style.backgroundImage = "url('weather-images/" + icon + ".jpg')"
 }
 
