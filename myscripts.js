@@ -13,7 +13,7 @@ let locationIcon = document.querySelector('.weather-icon')
 var enterKey = document.getElementById("searchBox")
 
 button.addEventListener('click', function(){
-    fetch(`https://api.openweathermap.org/data/2.5/weather?q=${inputvalue.value}&units=metric&appid=8dee5f5a933b8f9547bfb2b995ef2d91`)
+    fetch(`https://api.openweathermap.org/data/2.5/weather?q=${inputvalue.value}&units=metric&appid=`)
     .then(response => response.json())
     .then(
         displayData)
@@ -38,6 +38,8 @@ const displayData=(weather)=>{
 
     var icon = weather.weather[0].icon;
     locationIcon.innerHTML = `<img src="icons/${icon}.png" alt=${icon}>`;
+    document.body.style.backgroundImage = "url('weather-images/" + icon + ".jpg')"
     document.body.setAttribute("style", "background-image: url('weather-images/" + icon + ".jpg'); transition: linear 1.5s")
+    
 }
 
