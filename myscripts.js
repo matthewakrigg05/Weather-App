@@ -7,8 +7,6 @@ let desc = document.querySelector('.desc');
 let max = document.querySelector('.max');
 let min = document.querySelector('.min');
 let locationIcon = document.querySelector('.weather-icon')
-
-
 var enterKey = document.getElementById("searchBox")
 
 button.addEventListener('click', function(){
@@ -27,7 +25,6 @@ enterKey.addEventListener("keypress", function(event) {
     }
 });
 
-
 const displayData=(weather)=>{
     temp.innerText=`${Math.round(weather.main.temp)}°C`
     feelsLike.innerText = `Feels like ${Math.round(weather.main.feels_like)}°C`
@@ -37,6 +34,6 @@ const displayData=(weather)=>{
 
     var icon = weather.weather[0].icon;
     locationIcon.innerHTML = `<img src="icons/${icon}.png" alt=${icon}>`;
-    document.body.style.backgroundImage = "url('weather-images/" + icon + ".jpg')"
+    document.body.setAttribute("style", "background-image: url('weather-images/" + icon + ".jpg'); transition: linear 1.5s")
 }
 
