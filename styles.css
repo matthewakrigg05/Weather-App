@@ -1,5 +1,5 @@
 body {
-    background-image: url("weather-images/emma-claire-oVXNW-9INfc-unsplash.jpg");
+    background-image: url("weather-images/default.jpg");
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: 100% 100%;
@@ -73,7 +73,7 @@ button.button:hover{
     background-color: rgba(212, 212, 212, 0.733);
     display: flex;
     justify-content: center;
-    margin-top: 20%;
+    margin-top: 25%;
     margin-left: 50%;
     transform: translate(-50%, -50%);
     width: 120px;
