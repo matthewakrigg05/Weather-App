@@ -7,7 +7,6 @@ let desc = document.querySelector('.desc');
 let max = document.querySelector('.max');
 let min = document.querySelector('.min');
 let locationIcon = document.querySelector('.weather-icon')
-
 var enterKey = document.getElementById("searchBox")
 
 button.addEventListener('click', function(){
@@ -25,7 +24,6 @@ enterKey.addEventListener("keypress", function(event) {
     document.getElementById("button").click();
     }
 });
-
 
 const displayData=(weather)=>{
     temp.innerText=`${Math.round(weather.main.temp)}°C`
