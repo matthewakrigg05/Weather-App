@@ -38,5 +38,7 @@ const displayData=(weather)=>{
     var icon = weather.weather[0].icon;
     locationIcon.innerHTML = `<img src="icons/${icon}.png" alt=${icon}>`;
     document.body.style.backgroundImage = "url('weather-images/" + icon + ".jpg')"
+    document.body.setAttribute("style", "background-image: url('weather-images/" + icon + ".jpg'); transition: linear 1.5s")
+    
 }
 
