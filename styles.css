@@ -3,13 +3,10 @@ body {
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: 100% 100%;
-    font-family: "Fjalla One", sans-serif;
-    font-weight: 400;
-    font-style: normal;
 }
 
 .weather-box {
-    background-color: rgba(0, 0, 0, 0.63);
+    background-color: rgba(0, 0, 0, 0.75);
     height: 40%;
     width: 40%;
     left: 50%;
@@ -23,32 +20,25 @@ body {
 .todays-weather {
     display: flex;
     font-size: xx-large;
-    text-decoration: underline;
-    margin-top: 0px;
-    margin-left: 7.5%;
-}
-
-.desc {
-    font-size: xx-large;
+    font-weight: bold;
+    justify-content: center;
 }
 
 .input {
     display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 #searchBox {
     width: 50%;
-    height: 24px;
+    height: 32px;
     border-radius: 80px;
     color: black;
     padding-inline-start: 1%;
 }
 
 #button{
-    width: 30px;
-    height: 24px;
+    width: 40px;
+    height: 32px;
     border-radius: 20px;
     margin-left: 10px;
     background: #7c7c7c2b;
@@ -59,27 +49,28 @@ body {
     border: 1px solid white;
 }
 
-.displayWeather, .weather-icon {
-    display: inline-flex;
+
+.displayWeather, .weather-icon, .input {
     justify-content: center;
     align-items: center;
-    
 }
 
-.displayWeather{
+.displayWeather, .weather-icon {
+    display: inline-flex;    
+}
+
+.displayWeather {
     flex-direction: column;
     float: left;
     margin-left: 20%;
     margin-top: 5%;
-    font-family: 'Raleway', sans-serif;
+
 }
 
 .weather-icon{
     background-color: rgba(212, 212, 212, 0.733);
-    flex-direction: column;
     float: right;
-    width: 120px;
-    height: 120px;
+    size: 120px;
     border-radius: 30px;
     margin-right: 20%;
     margin-top: 10%
