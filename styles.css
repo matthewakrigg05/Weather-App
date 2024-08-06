@@ -29,7 +29,7 @@ body {
 }
 
 .desc {
-    font-size: x-large;
+    font-size: xx-large;
 }
 
 .input {
@@ -50,34 +50,38 @@ body {
     width: 30px;
     height: 24px;
     border-radius: 20px;
+    margin-left: 10px;
     background: #7c7c7c2b;
 }
 
 #button:hover{
     background: rgba(150, 148, 148, 0.349);
-}
-
-.displayWeather{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    font-family: 'Raleway', sans-serif;
-}
-
-button.button:hover{
     border: 1px solid white;
 }
 
-.weather-icon{
-    position: relative;
-    background-color: rgba(212, 212, 212, 0.733);
-    display: flex;
+.displayWeather, .weather-icon {
+    display: inline-flex;
     justify-content: center;
-    margin-top: 25%;
-    margin-left: 50%;
-    transform: translate(-50%, -50%);
+    align-items: center;
+    
+}
+
+.displayWeather{
+    flex-direction: column;
+    float: left;
+    margin-left: 20%;
+    margin-top: 5%;
+    font-family: 'Raleway', sans-serif;
+}
+
+.weather-icon{
+    background-color: rgba(212, 212, 212, 0.733);
+    flex-direction: column;
+    float: right;
     width: 120px;
     height: 120px;
     border-radius: 30px;
+    margin-right: 20%;
+    margin-top: 10%
+    
 }
