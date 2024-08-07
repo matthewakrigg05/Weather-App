@@ -30,10 +30,11 @@ const displayData=(weather)=>{
     feelsLike.innerText = `Feels like ${Math.round(weather.main.feels_like)}°C`
     max.innerText = `Maximum temperature: ${Math.round(weather.main.temp_max)}°C`
     min.innerText = `Minimum temperature: ${Math.round(weather.main.temp_min)}°C`
-    desc.innerText=`${weather.weather[0].description}`
+    desc.innerText=`${weather.weather[0].description}`.charAt(0).toUpperCase() + `${weather.weather[0].description}`.slice(1);
 
     var icon = weather.weather[0].icon;
     locationIcon.innerHTML = `<img src="icons/${icon}.png" alt=${icon}>`;
     document.body.setAttribute("style", "background-image: url('weather-images/" + icon + ".jpg'); transition: linear 1.25s")
 }
 
+// next idea is to clear search each when start typing again
