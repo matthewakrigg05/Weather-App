@@ -10,7 +10,7 @@ let locationIcon = document.querySelector('.weather-icon')
 var enterKey = document.getElementById("searchBox")
 
 button.addEventListener('click', function(){
-    fetch(`https://api.openweathermap.org/data/2.5/weather?q=${inputvalue.value}&units=metric&appid=`)
+    fetch(`https://api.openweathermap.org/data/2.5/weather?q=${inputvalue.value}&units=metric&appid=8dee5f5a933b8f9547bfb2b995ef2d91`)
     .then(response => response.json())
     .then(
         displayData)
