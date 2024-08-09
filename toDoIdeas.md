@@ -1,0 +1,3 @@
+    - add a forecast 
+    - make the site responsive and able to be resized
+    - show the time in the location that has been searched 
